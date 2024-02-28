@@ -10,6 +10,7 @@ import {
 import Link from 'next/link';
 import { Button } from '@/app/ui/button';
 import { updateInvoice } from '@/app/lib/actions';
+import { StyleRegistry, createStyleRegistry } from 'styled-jsx'
 
 export default function EditInvoiceForm({
   invoice,
@@ -20,7 +21,8 @@ export default function EditInvoiceForm({
 }) {
 
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
-    console.log('ppppppppp1111', process.env.NEXT_PUBLIC_TEST);
+    console.log('NEXT_PUBLIC_TEST', process.env.NEXT_PUBLIC_TEST);
+    console.log('TESTTESTTESTTEST', process.env.TEST);
   return (
     <form action={updateInvoiceWithId}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
