@@ -2,6 +2,7 @@ import SideNav from '@/app/ui/dashboard/sidenav';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     console.log('ppppppppp', process.env.NEXT_PUBLIC_TEST);
+    console.log('ppppppppp', process.env.TEST);
     return (
         <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
             <div className="w-full flex-none md:w-64">
